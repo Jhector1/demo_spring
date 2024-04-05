@@ -12,7 +12,7 @@ RUN ./gradlew clean jar
 FROM openjdk:21
 ARG JAR_FILE=build/*.jar
 #WORKDIR /app
-COPY ./build/libs/springjava21-0.0.1-SNAPSHOT.jar ./app.jar
+COPY build/libs/springjava21-0.0.1-SNAPSHOT.jar ./app.jar
 EXPOSE 8080
 #ENTRYPOINT ["java", "-jar", "./app.jar"]
 #CMD ["java", "-jar", "app.jar"]
