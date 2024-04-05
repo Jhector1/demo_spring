@@ -2,7 +2,7 @@
 #
 FROM gradle AS build
 ##ARG JAR_FILE=target/*.jar
-WORKDIR /app
+#WORKDIR /app
 #
 #COPY build.gradle .
 #COPY src ./src
