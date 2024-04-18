@@ -28,9 +28,9 @@ COPY build.gradle settings.gradle ./
 
 # Copy the entire source code to the container
 COPY . .
-#RUN gradle --version
-## Build the application using Gradle
-#RUN gradle clean build
+RUN gradle --version
+# Build the application using Gradle
+RUN gradle clean build
 
 # Final stage
 FROM adoptopenjdk/openjdk11:alpine-jre AS final
